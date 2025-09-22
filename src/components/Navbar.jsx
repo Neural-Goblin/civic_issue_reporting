@@ -60,6 +60,29 @@ const Navbar = () => {
                   <span>Report Issue</span>
                 </Link>
                 
+// In your Navbar.jsx, add this link:
+<Link 
+  to="/live-map" 
+  className={`flex items-center space-x-1 ${location.pathname === '/live-map' ? 'border-b-2 border-white' : 'opacity-80 hover:opacity-100'}`}
+>
+  <MapPin size={18} />
+  <span>Live Map</span>
+</Link>
+
+
+// Add this with your other navigation links
+<Link 
+  to="/live-map" 
+  className={`flex items-center space-x-1 ${location.pathname === '/live-map' ? 'border-b-2 border-white' : 'opacity-80 hover:opacity-100'}`}
+>
+  <MapPin size={18} />
+  <span>Live Map</span>
+</Link>
+
+
+
+
+
                 <Link 
                   to="/admin-login" 
                   className={`flex items-center space-x-1 ${location.pathname === '/admin-login' ? 'border-b-2 border-white' : 'opacity-80 hover:opacity-100'}`}

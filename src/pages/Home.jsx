@@ -104,6 +104,25 @@ const Home = () => {
         </div>
       </section>
 
+<section className="mb-16">
+  <div className="bg-blue-50 border border-blue-200 rounded-xl p-8 text-center">
+    <h2 className="text-2xl font-bold text-blue-800 mb-4">Live Issues Map</h2>
+    <p className="text-blue-600 mb-6">
+      See all reported issues across India on our interactive live map
+    </p>
+    <Link 
+      to="/live-map" 
+      className="bg-blue-600 text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-blue-700 transition duration-300 inline-flex items-center"
+    >
+      <MapPin className="mr-2" size={20} />
+      View Live Map
+    </Link>
+  </div>
+</section>
+
+
+
+
       {/* Success Stories Section */}
       <section className="mb-16">
         <h2 className="text-3xl font-bold text-center mb-12">Success Stories</h2>

@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { IssuesProvider } from './context/IssuesContext';
 import IssueReport from './components/IssueReport';
-
+import LiveMapPage from './pages/LiveMapPage';
+import TestMap from './pages/TestMap';
 import Home from './pages/Home';
 import UserAuth from './pages/UserAuth';
 import AdminLogin from './pages/AdminLogin';
@@ -52,6 +53,27 @@ function AppContent() {
     </ProtectedRoute>
   } 
 />
+<Route path="/test-map" element={<TestMap />} />
+
+         <Route 
+  path="/live-map" 
+  element={
+    <ProtectedRoute>
+      <LiveMapPage />
+    </ProtectedRoute>
+  } 
+/>
+
+<Route 
+  path="/live-map" 
+  element={
+    <ProtectedRoute>
+      <LiveMapPage />
+    </ProtectedRoute>
+  } 
+/>
+
+
         <Route 
           path="/admin-dashboard" 
           element={
